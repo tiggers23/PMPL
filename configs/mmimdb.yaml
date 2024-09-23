@@ -1,0 +1,20 @@
+train_file: '../dataset/mmimdb/train.txt'
+val_file: '../dataset/mmimdb/dev_text.txt'
+test_file: '../dataset/mmimdb/test_image.txt'
+
+image_root: '../dataset/mmimdb'
+hidden_size: 768
+image_res: 224
+# image_res: 384
+batch_size_train: 32
+batch_size_test: 64
+max_text_len: 512
+alpha: 0.4
+max_image_len: -1
+distill: True
+warm_up: False
+vit: "vit_base_patch32_384"
+bert_config: 'configs/config_bert.json'
+drop_rate: 0.1
+optimizer: {opt: adamW, lr: 1e-3, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 1e-3, epochs: 30, min_lr: 1e-7, decay_rate: 1, warmup_lr: 1e-4, warmup_epochs: 1, cooldown_epochs: 0}
