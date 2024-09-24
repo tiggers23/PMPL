@@ -6,9 +6,10 @@ This repo contains the code for the PMPL research project, which focuses on impr
 In this paper, we apply three dataset: Twitter-15/17, CrisisMMD, and MM-IMDB. Among this datasets, Twitter-15/17 is a re-annotated version with the unimodal labels by Chen et al., which can be found in [HFIR](https://github.com/code-chendl/HFIR), while you can access the data of CrsisMMD in [crisismmd](https://crisisnlp.qcri.org/crisismmd) (to be noticed, we use the version is crisismmdv1.0). Then, MM-IMDB can be downloaded in [mmimdb](http://lisi1.unal.edu.co/mmimdb/mmimdb.tar.gz).
 ### pre-process
 To quickly start our project, we recommond you pre-process the text file of download data into one '.json' file for each dataset as the below fromation:
-''' 
-{'id': image_file_path, 'text': text_content, 'text_label': text_label, 'image_label': image_label, 'label': overall_label}
-'''
+
+> {'id': image_file_path, 'text': text_content, 'text_label': text_label, 'image_label': image_label, 'label': overall_label}
+
+Each sample should be a dictionary of python style in the '.json' file.
 
 
 
