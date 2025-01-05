@@ -16,3 +16,26 @@ Each sample should be a dictionary of python style in the '.json' file.
 ## Training
 
 python PMPL_main.py --seed #seed --beta=#beta --lr=#lr --prompt_length=#prompt_length --n_fusion_layers=#fusion_layer --batch_size=64 --class_num=#class_of_dataset --config=./configs --dataset=#dataset --dev_dataset=dev.txt --device=cuda:1 --file_path=#output_file --test_dataset=test.txt --train_dataset=train.txt --type=train
+
+## Citation
+
+If you find this project useful in your research, please consider citing:
+
+```
+
+@inproceedings{DBLP:conf/cikm/FangWLHL24,
+  author       = {Junlin Fang and
+                  Wenya Wang and
+                  Tianze Luo and
+                  Yanyong Huang and
+                  Fengmao Lv},
+  title        = {Progressive Multimodal Pivot Learning: Towards Semantic Discordance
+                  Understanding as Humans},
+  booktitle    = {Proceedings of the 33rd {ACM} International Conference on Information
+                  and Knowledge Management, {CIKM} 2024, Boise, ID, USA, October 21-25,
+                  2024},
+  pages        = {591--601},
+  publisher    = {{ACM}},
+  year         = {2024},
+}
+```
